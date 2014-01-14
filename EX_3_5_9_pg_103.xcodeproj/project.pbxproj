@@ -21,6 +21,9 @@
 		006126431885080700DA9492 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006126251885080700DA9492 /* UIKit.framework */; };
 		0061264B1885080700DA9492 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 006126491885080700DA9492 /* InfoPlist.strings */; };
 		0061264D1885080700DA9492 /* EX_3_5_9_pg_103Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061264C1885080700DA9492 /* EX_3_5_9_pg_103Tests.m */; };
+		006126571885088E00DA9492 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 006126561885088E00DA9492 /* db.sqlite */; };
+		0061265A188509A400DA9492 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 00612659188509A400DA9492 /* Movie.m */; };
+		0061265C188509FE00DA9492 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0061265B188509FE00DA9492 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		006126481885080700DA9492 /* EX_3_5_9_pg_103Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EX_3_5_9_pg_103Tests-Info.plist"; sourceTree = "<group>"; };
 		0061264A1885080700DA9492 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0061264C1885080700DA9492 /* EX_3_5_9_pg_103Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EX_3_5_9_pg_103Tests.m; sourceTree = "<group>"; };
+		006126561885088E00DA9492 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = db.sqlite; path = EX_3_5_9_pg_103/db.sqlite; sourceTree = "<group>"; };
+		00612658188509A400DA9492 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		00612659188509A400DA9492 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		0061265B188509FE00DA9492 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0061265C188509FE00DA9492 /* libsqlite3.dylib in Frameworks */,
 				006126241885080700DA9492 /* CoreGraphics.framework in Frameworks */,
 				006126261885080700DA9492 /* UIKit.framework in Frameworks */,
 				006126221885080700DA9492 /* Foundation.framework in Frameworks */,
@@ -82,6 +90,7 @@
 		006126151885080700DA9492 = {
 			isa = PBXGroup;
 			children = (
+				006126561885088E00DA9492 /* db.sqlite */,
 				006126271885080700DA9492 /* EX_3_5_9_pg_103 */,
 				006126461885080700DA9492 /* EX_3_5_9_pg_103Tests */,
 				006126201885080700DA9492 /* Frameworks */,
@@ -101,6 +110,7 @@
 		006126201885080700DA9492 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0061265B188509FE00DA9492 /* libsqlite3.dylib */,
 				006126211885080700DA9492 /* Foundation.framework */,
 				006126231885080700DA9492 /* CoreGraphics.framework */,
 				006126251885080700DA9492 /* UIKit.framework */,
@@ -119,6 +129,8 @@
 				006126371885080700DA9492 /* ViewController.m */,
 				006126391885080700DA9492 /* Images.xcassets */,
 				006126281885080700DA9492 /* Supporting Files */,
+				00612658188509A400DA9492 /* Movie.h */,
+				00612659188509A400DA9492 /* Movie.m */,
 			);
 			path = EX_3_5_9_pg_103;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 				0061263A1885080700DA9492 /* Images.xcassets in Resources */,
 				0061262C1885080700DA9492 /* InfoPlist.strings in Resources */,
 				006126351885080700DA9492 /* Main.storyboard in Resources */,
+				006126571885088E00DA9492 /* db.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +264,7 @@
 			files = (
 				006126381885080700DA9492 /* ViewController.m in Sources */,
 				006126321885080700DA9492 /* AppDelegate.m in Sources */,
+				0061265A188509A400DA9492 /* Movie.m in Sources */,
 				0061262E1885080700DA9492 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
